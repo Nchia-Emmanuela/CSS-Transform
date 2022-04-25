@@ -34,3 +34,23 @@
     align-items: center;
     justify-content: center;
   }
+
+  .btn {
+      position: absolute;
+      bottom: 30%;
+      border: none;
+      background-color: #0074d9;
+      width: 90px;
+      padding: .5rem;
+      border-radius: 30px;
+  }
+
+  a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+  }
+
+  .btn:hover {
+    transform: scale(2, 1.5)
+  }
