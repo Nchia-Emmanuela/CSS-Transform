@@ -1,0 +1,56 @@
+.element {
+    display: inline-block;
+    background: linear-gradient(180deg,#ff8a00,#e52e71);
+    height: 100px;
+    width: 100px;
+    font-size: 1px;
+    padding: 1px;
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+    animation: skew 3s infinite;
+    transform: skew(20deg);
+    animation-direction: alternate;
+    opacity: .7;
+  }
+  
+  @keyframes skew {
+    0% {
+      transform: skew(20deg, 20deg);
+    }
+    100% {
+      transform: skew(-20deg, -20deg);
+    }
+  }
+  
+  
+  body, html {
+    height: 100%;
+  }
+  
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn {
+    position: absolute;
+    bottom: 30%;
+    border: none;
+    background-color: linear-gradient(180deg,#ff8a00,#e52e71);
+    width: 90px;
+    padding: .5rem;
+    border-radius: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.btn:hover {
+    transform: scale(2, 1.5)
+  }
